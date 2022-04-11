@@ -136,9 +136,18 @@ line-height: 1.192;
 /* main index */
 /* section hero */
 .hero {
+    height: 600px;
+    max-width: 1600px;
+    margin: auto;
     padding-top: 200px;
     padding-bottom: 200px;
 
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../images/background-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--dark-background-color);
 }
 .slogan {
