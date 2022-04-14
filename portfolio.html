@@ -28,7 +28,9 @@
         <!-- navigation -->
         <nav class="navigation">
           <ul class="site-nav">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
             <li class="item">
               <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
@@ -39,12 +41,19 @@
         <!-- contacts -->
         <ul class="contacts">
           <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="link-icon-mail">
+                <use href="./images/sprite-icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link" href="tel:+380961111111">
+              <svg class="link-icon-phone">
+                <use href="./images/sprite-icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -199,13 +208,14 @@
     </main>
 
     <!--footer site web studio-->
-    <footer class="footer">
+    <div class="footer">
       <div class="conteiner footer-nav">
+        <div class="footer-address">
         <a class="logo-footer" href="./index.html"
           >Web<span class="logo-text">Studio</span></a
         >
 
-        <!-- address -->
+        <!-- address footer -->
         <address class="address">
           <ul class="connection">
             <li class="item">
@@ -218,7 +228,6 @@
               >
             </li>
 
-            <!-- link -->
             <li class="item">
               <a class="link" href="mailto:info@example.com"
                 >info@example.com</a
@@ -231,6 +240,42 @@
           </ul>
         </address>
       </div>
+
+      <!-- social footer -->
+      <div>
+        <h3 class="title-social">присоединяйтесь</h3>
+        <ul class="icons-social">
+          <li class="item-icon-social">
+            <a href="#">
+              <svg class="icon">
+                <use href="./images/sprite-icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-icon-social">
+            <a href="#">
+              <svg class="icon">
+                <use href="./images/sprite-icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-icon-social">
+            <a href="#">
+              <svg class="icon">
+                <use href="./images/sprite-icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-icon-social">
+            <a href="#">
+              <svg class="icon">
+                <use href="./images/sprite-icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </div>
     </footer>
   </body>
 </html>
