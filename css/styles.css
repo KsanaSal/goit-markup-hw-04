@@ -316,10 +316,7 @@ line-height: 1.192;
     background-color: var(--light-background-color);
     color: var(--darklight-background-color);
 }
-.item-icon-user a {
-    color: currentColor; 
-}
-.item-icon-user:not(:last-child) {
+.icons-user li:not(:last-child) {
     margin-right: 10px;
 }
 .icon-more {
@@ -327,9 +324,10 @@ line-height: 1.192;
     height: 20px;
     fill: currentColor;
 }
-.item-icon-user:hover {
+.item-icon-user:hover,
+.item-icon-user:focus {
     background-color: var(--accent-background-color);
-    color: var(--light-color-text);
+    color: var(--light-background-color);
 }
 
 /* section regular clients */
@@ -354,7 +352,8 @@ line-height: 1.192;
     height: 60px;
     fill: currentColor;
 }
-.client:hover {
+.client:hover,
+.client:focus {
     color: var(--accent-background-color);
 }
 /* end main index */
@@ -412,7 +411,8 @@ line-height: 1.192;
 .card:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
-.card:hover {
+.card:hover,
+.card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-search {
@@ -495,19 +495,17 @@ line-height: 1.192;
 .item-icon-social {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.item-icon-social:not(:last-child) {
+.icons-social li:not(:last-child) {
     margin-right: 10px;
 }
-.item-icon-social > a {
-    display: flex;
-    align-items: center;
-}
-.item-icon-social:hover {
+.item-icon-social:hover,
+.item-icon-social:focus {
     background-color: var(--accent-background-color);
 }
 .icon {
